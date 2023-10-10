@@ -3,7 +3,25 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply bg-[#1a1a1a] text-[#f2f2f2];
-    }
+  body {
+    @apply bg-[#1a1a1a] text-[#f2f2f2];
+  }
+}
+
+@layer utilities {
+  .shadow-hello {
+    text-shadow: 15px 15px #ff4e9a;
+  }
+  .shadow-whoami {
+    text-shadow: 15px 15px #b68600;
+  }
+  .shadow-skills {
+    text-shadow: 15px 15px #00ff88;
+  }
+  .shadow-portfolio {
+    text-shadow: 15px 15px #00eaff;
+  }
+  .shadow-tools {
+    text-shadow: 15px 15px #b146f9;
+  }
 }
