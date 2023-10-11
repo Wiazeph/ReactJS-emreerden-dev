@@ -32,3 +32,36 @@ const navLinks = [
 ];
 
 export default navLinks;
+
+// import { FaInstagram, FaLinkedin, FaGithub, FaCodepen } from "react-icons/fa";
+
+// export const socialLinks = [
+//   {
+//     separator: "h-4 w-px bg-current",
+//   },
+//   {
+//     link: "https://instagram.com/Wiazeph",
+//     icon: <FaInstagram />,
+//   },
+//   {
+//     separator: "h-4 w-px bg-current",
+//   },
+//   {
+//     link: "https://linkedin.com/in/Wiazeph",
+//     icon: <FaLinkedin />,
+//   },
+//   {
+//     separator: "h-4 w-px bg-current",
+//   },
+//   {
+//     link: "https://github.com/Wiazeph",
+//     icon: <FaGithub />,
+//   },
+//   {
+//     separator: "h-4 w-px bg-current",
+//   },
+//   {
+//     link: "https://codepen.io/Wiazeph",
+//     icon: <FaCodepen />,
+//   },
+// ];

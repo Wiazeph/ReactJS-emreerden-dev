@@ -32,6 +32,7 @@ const NavBar = () => {
         <NavLink
           key={index}
           to={nlink.path}
+          className="select-none"
           onClick={() => setCurrentPathColor(nlink.color)}
           onMouseOver={() => handleNavLinkOver(nlink.color)}
           onMouseOut={handleNavLinkOut}
@@ -39,7 +40,7 @@ const NavBar = () => {
           {({ isActive }) => (
             <div
               className={classNames(
-                "flex gap-4 items-center transition-all py-2",
+                "flex gap-4 items-center transition-all py-3",
                 {
                   [nlink.color]: isActive,
                   [nlink.textHover]: !isActive,

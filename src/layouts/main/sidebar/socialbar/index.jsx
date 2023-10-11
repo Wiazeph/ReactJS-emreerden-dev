@@ -8,6 +8,8 @@ import {
   FaGithub,
   FaCodepen,
 } from "react-icons/fa";
+// import React from "react";
+// import { socialLinks } from "~/utils/consts";
 
 const SocialBar = () => {
   const color = useColorStore((state) => state.color);
@@ -23,19 +25,33 @@ const SocialBar = () => {
         href="https://twitter.com/Wiazeph"
         target="_blank"
         rel="noopener noreferrer"
-        className="border border-current w-8 h-8 rounded-full flex items-center justify-center"
+        className="border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         {isHovered ? <FaXTwitter /> : <FaTwitter />}
       </a>
 
+      {/* {socialLinks.map((slink, index) => (
+        <React.Fragment key={index}>
+          <div className={slink.separator}></div>
+          <a
+            href={slink.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50"
+          >
+            {slink.icon}
+          </a>
+        </React.Fragment>
+      ))} */}
+
       <div className="h-4 w-px bg-current"></div>
       <a
         href="https://instagram.com/Wiazeph"
         target="_blank"
         rel="noopener noreferrer"
-        className="border border-current w-8 h-8 rounded-full flex items-center justify-center"
+        className="border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50"
       >
         <FaInstagram />
       </a>
@@ -44,7 +60,7 @@ const SocialBar = () => {
         href="https://linkedin.com/in/Wiazeph"
         target="_blank"
         rel="noopener noreferrer"
-        className="border border-current w-8 h-8 rounded-full flex items-center justify-center"
+        className="border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50"
       >
         <FaLinkedin />
       </a>
@@ -53,7 +69,7 @@ const SocialBar = () => {
         href="https://github.com/Wiazeph"
         target="_blank"
         rel="noopener noreferrer"
-        className="border border-current w-8 h-8 rounded-full flex items-center justify-center"
+        className="border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50"
       >
         <FaGithub />
       </a>
@@ -62,7 +78,7 @@ const SocialBar = () => {
         href="https://codepen.io/Wiazeph"
         target="_blank"
         rel="noopener noreferrer"
-        className="border border-current w-8 h-8 rounded-full flex items-center justify-center"
+        className="border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50"
       >
         <FaCodepen />
       </a>
