@@ -8,10 +8,19 @@
   }
 }
 
+@layer components {
+  .card-link {
+    @apply flex items-center justify-center gap-3 px-5 py-3 w-fit rounded-lg border border-gray-600 bg-[#2a2a2a] shadow-lg;
+  }
+}
+
 @layer utilities {
   /* pages/ */
   .page-base {
     @apply flex flex-col gap-12;
+  }
+  .page-title {
+    @apply text-6xl font-bold transition-colors;
   }
   /* pages/ */
 
@@ -32,22 +41,4 @@
     @apply border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50;
   }
   /* layouts/main/socialbar */
-
-  /* layouts/main/sidebar/navbar */
-  .shadow-hello {
-    text-shadow: 15px 15px #ff4e9a;
-  }
-  .shadow-whoami {
-    text-shadow: 15px 15px #b68600;
-  }
-  .shadow-skills {
-    text-shadow: 15px 15px #00ff88;
-  }
-  .shadow-portfolio {
-    text-shadow: 15px 15px #00eaff;
-  }
-  .shadow-tools {
-    text-shadow: 15px 15px #b146f9;
-  }
-  /* layouts/main/sidebar/navbar */
 }

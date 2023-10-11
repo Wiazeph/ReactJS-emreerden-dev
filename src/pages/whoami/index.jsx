@@ -5,7 +5,7 @@ const WhoAmI = () => {
 
   return (
     <div className="page-base">
-      <div className={`text-6xl font-bold select-none transition-colors ${color}`}>whoami.</div>
+      <div className={`page-title select-none ${color}`}>whoami.</div>
 
       <div className="text-lg">
         First of all, Hello Mate! My name is Emre and I'm 22 years old. I live

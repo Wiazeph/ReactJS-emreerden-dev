@@ -3,68 +3,35 @@ const navLinks = [
     path: "/",
     title: "hello",
     color: "text-pink-400",
-    textHover: "hover:text-pink-300 hover:shadow-hello",
+    textHover: "hover:text-pink-300 hover:translate-x-4",
   },
   {
     path: "/whoami",
     title: "whoami",
     color: "text-yellow-300",
-    textHover: "hover:text-yellow-200 hover:shadow-whoami",
+    textHover: "hover:text-yellow-200 hover:translate-x-4",
   },
   {
     path: "/skills",
     title: "skills",
     color: "text-green-400",
-    textHover: "hover:text-green-300 hover:shadow-skills",
+    textHover: "hover:text-green-300 hover:translate-x-4",
   },
   {
     path: "/portfolio",
     title: "portfolio",
     color: "text-blue-400",
-    textHover: "hover:text-blue-300 hover:shadow-portfolio",
+    textHover: "hover:text-blue-300 hover:translate-x-4",
   },
   {
     path: "/tools",
     title: "tools",
-    color: "text-purple-400",
-    textHover: "hover:text-purple-300  hover:shadow-tools",
+    color: "text-red-500",
+    textHover: "hover:text-red-400 hover:translate-x-4",
   },
 ];
 
 export default navLinks;
-
-// import { FaInstagram, FaLinkedin, FaGithub, FaCodepen } from "react-icons/fa";
-
-// export const socialLinks = [
-//   {
-//     separator: "h-4 w-px bg-current",
-//   },
-//   {
-//     link: "https://instagram.com/Wiazeph",
-//     icon: <FaInstagram />,
-//   },
-//   {
-//     separator: "h-4 w-px bg-current",
-//   },
-//   {
-//     link: "https://linkedin.com/in/Wiazeph",
-//     icon: <FaLinkedin />,
-//   },
-//   {
-//     separator: "h-4 w-px bg-current",
-//   },
-//   {
-//     link: "https://github.com/Wiazeph",
-//     icon: <FaGithub />,
-//   },
-//   {
-//     separator: "h-4 w-px bg-current",
-//   },
-//   {
-//     link: "https://codepen.io/Wiazeph",
-//     icon: <FaCodepen />,
-//   },
-// ];
 
 import { IoLogoHtml5, IoLogoCss3, IoLogoSass } from "react-icons/io";
 import { FaBootstrap, FaReact, FaVuejs } from "react-icons/fa";
@@ -115,5 +82,108 @@ export const skillsList = [
     path: "https://www.w3schools.com/git/default.asp",
     icon: <BiLogoGit />,
     title: "Git",
+  },
+];
+
+export const toolsList = [
+  {
+    path: "https://proton.me/mail",
+    title: "Proton Mail",
+  },
+  {
+    path: "https://proton.me/pass",
+    title: "Proton Pass",
+  },
+  {
+    path: "https://proton.me/calendar",
+    title: "Proton Calendar",
+  },
+  {
+    path: "https://protonvpn.com/",
+    title: "Proton VPN",
+  },
+  {
+    path: "https://authy.com/",
+    title: "Authy",
+  },
+  {
+    path: "https://www.mozilla.org/en-US/firefox/new/",
+    title: "Firefox Browser",
+  },
+  {
+    path: "https://www.google.com/chrome/",
+    title: "Google Chrome",
+  },
+  {
+    path: "https://maps.google.com/",
+    title: "Google Maps",
+  },
+  {
+    path: "https://drive.google.com/drive",
+    title: "Google Drive",
+  },
+  {
+    path: "https://meet.google.com/",
+    title: "Google Meet",
+  },
+  {
+    path: "https://translate.google.com/",
+    title: "Google Translate",
+  },
+  {
+    path: "https://www.deepl.com/translator",
+    title: "DeepL Translator",
+  },
+  {
+    path: "https://todoist.com/",
+    title: "Todoist",
+  },
+  {
+    path: "https://www.notion.so/",
+    title: "Notion",
+  },
+  {
+    path: "https://getpocket.com/",
+    title: "Pocket",
+  },
+  {
+    path: "https://code.visualstudio.com/",
+    title: "Visual Studio Code",
+  },
+  {
+    path: "https://www.sublimetext.com/",
+    title: "Sublime Text",
+  },
+  {
+    path: "https://openai.com/chatgpt",
+    title: "ChatGPT",
+  },
+  {
+    path: "https://vercel.com/",
+    title: "Vercel",
+  },
+  {
+    path: "https://www.figma.com/",
+    title: "Figma",
+  },
+  {
+    path: "https://flowcv.com/",
+    title: "FlowCV",
+  },
+  {
+    path: "https://excalidraw.com/",
+    title: "Excalidraw",
+  },
+  {
+    path: "https://calendly.com/",
+    title: "Calendly",
+  },
+  {
+    path: "https://zoom.us/",
+    title: "Zoom",
+  },
+  {
+    path: "https://app.prntscr.com/",
+    title: "Lightshot",
   },
 ];

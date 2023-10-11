@@ -8,8 +8,6 @@ import {
   FaGithub,
   FaCodepen,
 } from "react-icons/fa";
-// import React from "react";
-// import { socialLinks } from "~/utils/consts";
 
 const SocialBar = () => {
   const color = useColorStore((state) => state.color);
@@ -32,21 +30,8 @@ const SocialBar = () => {
         {isHovered ? <FaXTwitter /> : <FaTwitter />}
       </a>
 
-      {/* {socialLinks.map((slink, index) => (
-        <React.Fragment key={index}>
-          <div className={slink.separator}></div>
-          <a
-            href={slink.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="socialbar-link"
-          >
-            {slink.icon}
-          </a>
-        </React.Fragment>
-      ))} */}
-
       <div className="h-4 w-px bg-current"></div>
+
       <a
         href="https://instagram.com/Wiazeph"
         target="_blank"
@@ -55,7 +40,9 @@ const SocialBar = () => {
       >
         <FaInstagram />
       </a>
+
       <div className="h-4 w-px bg-current"></div>
+
       <a
         href="https://linkedin.com/in/Wiazeph"
         target="_blank"
@@ -64,7 +51,9 @@ const SocialBar = () => {
       >
         <FaLinkedin />
       </a>
+
       <div className="h-4 w-px bg-current"></div>
+
       <a
         href="https://github.com/Wiazeph"
         target="_blank"
@@ -73,7 +62,9 @@ const SocialBar = () => {
       >
         <FaGithub />
       </a>
+
       <div className="h-4 w-px bg-current"></div>
+
       <a
         href="https://codepen.io/Wiazeph"
         target="_blank"
