@@ -25,7 +25,7 @@ const SocialBar = () => {
         href="https://twitter.com/Wiazeph"
         target="_blank"
         rel="noopener noreferrer"
-        className="border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50"
+        className="socialbar-link"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -39,7 +39,7 @@ const SocialBar = () => {
             href={slink.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50"
+            className="socialbar-link"
           >
             {slink.icon}
           </a>
@@ -51,7 +51,7 @@ const SocialBar = () => {
         href="https://instagram.com/Wiazeph"
         target="_blank"
         rel="noopener noreferrer"
-        className="border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50"
+        className="socialbar-link"
       >
         <FaInstagram />
       </a>
@@ -60,7 +60,7 @@ const SocialBar = () => {
         href="https://linkedin.com/in/Wiazeph"
         target="_blank"
         rel="noopener noreferrer"
-        className="border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50"
+        className="socialbar-link"
       >
         <FaLinkedin />
       </a>
@@ -69,7 +69,7 @@ const SocialBar = () => {
         href="https://github.com/Wiazeph"
         target="_blank"
         rel="noopener noreferrer"
-        className="border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50"
+        className="socialbar-link"
       >
         <FaGithub />
       </a>
@@ -78,7 +78,7 @@ const SocialBar = () => {
         href="https://codepen.io/Wiazeph"
         target="_blank"
         rel="noopener noreferrer"
-        className="border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50"
+        className="socialbar-link"
       >
         <FaCodepen />
       </a>

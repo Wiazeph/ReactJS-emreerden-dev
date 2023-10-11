@@ -4,8 +4,10 @@ const WhoAmI = () => {
   const color = useColorStore((state) => state.color);
 
   return (
-    <>
-      <div className="md:text-lg mb-10 sm:mb-12 ">
+    <div className="page-base">
+      <div className={`text-6xl font-bold select-none transition-colors ${color}`}>whoami.</div>
+
+      <div className="text-lg">
         First of all, Hello Mate! My name is Emre and I'm 22 years old. I live
         in{" "}
         <a
@@ -22,11 +24,11 @@ const WhoAmI = () => {
       </div>
 
       <div className="flex flex-col gap-5">
-        <div className={`select-none text-sm ${color}`}>
+        <div className={`select-none text-sm transition-colors ${color}`}>
           What I like to do and my hobbies are:
         </div>
 
-        <ul className="flex flex-col gap-6 sm:gap-7 md:gap-8">
+        <ul className="flex flex-col gap-8">
           <li>
             I love watching Movies and TV Series. And I like to talk to people
             about them. If you want to see the movies I watched and my watch
@@ -68,7 +70,7 @@ const WhoAmI = () => {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 

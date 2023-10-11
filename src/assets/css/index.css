@@ -9,6 +9,12 @@
 }
 
 @layer utilities {
+  /* pages/ */
+  .page-base {
+    @apply flex flex-col gap-12;
+  }
+  /* pages/ */
+
   /* pages/home */
   .home-link {
     @apply transition-colors hover:text-pink-400;
@@ -20,6 +26,12 @@
     @apply underline transition-colors hover:text-yellow-300;
   }
   /* pages/whoami */
+
+  /* layouts/main/socialbar */
+  .socialbar-link {
+    @apply border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50;
+  }
+  /* layouts/main/socialbar */
 
   /* layouts/main/sidebar/navbar */
   .shadow-hello {
