@@ -40,7 +40,7 @@ const NavBar = () => {
           {({ isActive }) => (
             <div
               className={classNames(
-                "flex gap-4 items-center transition-all py-3",
+                "flex gap-5 items-center transition-all py-3",
                 {
                   [nlink.color]: isActive,
                   [nlink.textHover]: !isActive,

@@ -19,7 +19,7 @@ const SocialBar = () => {
     <div
       className={`flex flex-col gap-2 items-center transition-colors ${color}`}
     >
-      <div className="h-8 w-px bg-current"></div>
+      <div className="h-10 w-px bg-current"></div>
 
       <a
         href="https://twitter.com/Wiazeph"
@@ -83,7 +83,7 @@ const SocialBar = () => {
         <FaCodepen />
       </a>
 
-      <div className="h-8 w-px bg-current"></div>
+      <div className="h-10 w-px bg-current"></div>
     </div>
   );
 };
