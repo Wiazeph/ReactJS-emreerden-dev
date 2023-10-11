@@ -30,7 +30,7 @@ const Home = () => {
           href="https://flowcv.com/resume/l3ncgjown0"
           target="_blank"
           rel="noopener noreferrer"
-          className="transition-colors hover:text-pink-400"
+          className="home-link"
         >
           View CV
         </a>
@@ -39,7 +39,7 @@ const Home = () => {
           href="Emre_Erden_CV.pdf"
           target="_blank"
           download="Emre_Erden_CV.pdf"
-          className="transition-colors hover:text-pink-400"
+          className="home-link"
         >
           Download CV
         </a>

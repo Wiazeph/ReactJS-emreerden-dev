@@ -4,11 +4,24 @@
 
 @layer base {
   body {
-    @apply bg-[#1a1a1a] text-[#f2f2f2];
+    @apply bg-[#1a1a1a] text-gray-50;
   }
 }
 
 @layer utilities {
+  /* pages/home */
+  .home-link {
+    @apply transition-colors hover:text-pink-400;
+  }
+  /* pages/home */
+
+  /* pages/whoami */
+  .whoami-link {
+    @apply underline transition-colors hover:text-yellow-300;
+  }
+  /* pages/whoami */
+
+  /* layouts/main/sidebar/navbar */
   .shadow-hello {
     text-shadow: 15px 15px #ff4e9a;
   }
@@ -24,4 +37,5 @@
   .shadow-tools {
     text-shadow: 15px 15px #b146f9;
   }
+  /* layouts/main/sidebar/navbar */
 }

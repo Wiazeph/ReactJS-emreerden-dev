@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "~/layouts/main";
 import Home from "~/pages/home";
+import WhoAmI from "~/pages/whoami";
 
 const routes = createBrowserRouter([
   {
@@ -13,7 +14,7 @@ const routes = createBrowserRouter([
       },
       {
         path: "whoami",
-        element: <div>whoami</div>,
+        element: <WhoAmI />,
       },
       {
         path: "skills",
