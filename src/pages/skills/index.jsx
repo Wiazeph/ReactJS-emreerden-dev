@@ -8,12 +8,12 @@ const Skills = () => {
     <div className="page-base select-none">
       <div className={`page-title ${color}`}>skills.</div>
 
-      <div className="tracking-wider">
-        <div className="text-gray-500">{"<span>"}</div>
+      <div className="tracking-wide">
+        <div className="text-gray-500 text-sm">{"<span>"}</div>
         <div className="my-2 ml-4">
           Skills I know, I use and currently continue to learn:
         </div>
-        <div className="text-gray-500">{"</span>"}</div>
+        <div className="text-gray-500 text-sm">{"</span>"}</div>
       </div>
 
       <ul
@@ -25,7 +25,7 @@ const Skills = () => {
             href={skill.path}
             target="_blank"
             rel="noopener noreferrer"
-            className={`card-link hover:border-green-400 [&:not(:hover)]:text-gray-50 transition-colors ${color}`}
+            className={`card-link card-skills hover:border-green-400 [&:not(:hover)]:text-gray-50 transition-colors ${color}`}
           >
             <span className="text-xl">{skill.icon}</span>
             <span>{skill.title}</span>

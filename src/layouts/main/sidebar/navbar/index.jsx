@@ -27,7 +27,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="w-max">
+    <nav className="w-max text-lg">
       {navLinks.map((nlink, index) => (
         <NavLink
           key={index}
@@ -47,7 +47,7 @@ const NavBar = () => {
                 }
               )}
             >
-              <div>{index + 1}.</div>
+              <div>{index}.</div>
               <div># {nlink.title}</div>
             </div>
           )}

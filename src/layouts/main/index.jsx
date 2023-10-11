@@ -7,7 +7,7 @@ const MainLayout = () => {
       <aside>
         <SideBar />
       </aside>
-      <main className="w-full max-w-2xl max-h-full overflow-y-auto pr-5">
+      <main className="w-full max-w-2xl max-h-[85%] overflow-y-auto pr-5">
         <Outlet />
       </main>
     </div>

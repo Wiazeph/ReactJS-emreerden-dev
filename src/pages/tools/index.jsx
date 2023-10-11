@@ -17,7 +17,7 @@ const Tools = () => {
             href={tool.path}
             target="_blank"
             rel="noopener noreferrer"
-            className={`card-link hover:border-red-500 [&:not(:hover)]:text-gray-50 transition-colors ${color}`}
+            className={`card-link card-tools hover:border-blue-400 [&:not(:hover)]:text-gray-50 transition-colors ${color}`}
           >
             {tool.title}
           </a>

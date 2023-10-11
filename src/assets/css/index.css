@@ -10,7 +10,16 @@
 
 @layer components {
   .card-link {
-    @apply flex items-center justify-center gap-3 px-5 py-3 w-fit rounded-lg border border-gray-600 bg-[#2a2a2a] shadow-lg;
+    @apply flex items-center justify-center py-3 rounded-lg border border-gray-600 bg-[#2a2a2a] shadow-lg text-sm;
+  }
+  .card-home {
+    @apply gap-3 px-5;
+  }
+  .card-skills {
+    @apply gap-3 w-[calc(33%-12px)];
+  }
+  .card-tools {
+    @apply w-[calc(33%-12px)];
   }
 }
 

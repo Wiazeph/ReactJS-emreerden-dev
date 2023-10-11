@@ -20,14 +20,14 @@ const navLinks = [
   {
     path: "/portfolio",
     title: "portfolio",
-    color: "text-blue-400",
-    textHover: "hover:text-blue-300 hover:translate-x-2",
+    color: "text-red-500",
+    textHover: "hover:text-red-400 hover:translate-x-2",
   },
   {
     path: "/tools",
     title: "tools",
-    color: "text-red-500",
-    textHover: "hover:text-red-400 hover:translate-x-2",
+    color: "text-blue-400",
+    textHover: "hover:text-blue-300 hover:translate-x-2",
   },
 ];
 

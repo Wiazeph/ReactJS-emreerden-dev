@@ -27,8 +27,8 @@ const Home = () => {
         learning new things and constantly improving myself.
       </div>
 
-      <div className="text-sm flex gap-4">
-        <div className="card-link">
+      <div className="flex gap-4">
+        <div className="card-link card-home">
           <a
             href="mailto:emreerden@pm.me"
             className="home-link flex items-center justify-center gap-2"
@@ -54,7 +54,7 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="card-link select-none">
+        <div className="card-link card-home select-none">
           <a
             href="https://flowcv.com/resume/l3ncgjown0"
             target="_blank"
