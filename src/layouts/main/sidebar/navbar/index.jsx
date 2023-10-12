@@ -27,7 +27,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="w-max text-lg">
+    <nav className="md:text-lg flex md:flex-col gap-3 sm:gap-6 md:gap-0 pr-6 sm:pr-12 md:pr-0">
       {navLinks.map((nlink, index) => (
         <NavLink
           key={index}
@@ -39,16 +39,14 @@ const NavBar = () => {
         >
           {({ isActive }) => (
             <div
-              className={classNames(
-                "flex gap-5 items-center transition-all py-3",
-                {
-                  [nlink.color]: isActive,
-                  [nlink.textHover]: !isActive,
-                }
-              )}
+              className={classNames("flex items-center transition-all py-3", {
+                [nlink.color]: isActive,
+                [nlink.textHover]: !isActive,
+              })}
             >
-              <div>{index}.</div>
-              <div># {nlink.title}</div>
+              <div className="md:mr-5 hidden md:block">{index}.</div>
+              <div className="md:mr-1 hidden md:block">#</div>
+              <div>{nlink.title}</div>
             </div>
           )}
         </NavLink>

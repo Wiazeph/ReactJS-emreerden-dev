@@ -15,7 +15,7 @@ const SocialBar = () => {
 
   return (
     <div
-      className={`fixed md:static bottom-4 md:bottom-auto left-1/2 md:left-auto -translate-x-1/2 md:-translate-x-0 flex md:flex-col gap-2 items-center transition-colors ${color}`}
+      className={`fixed md:static bottom-[26px] md:bottom-auto left-1/2 md:left-auto -translate-x-1/2 md:-translate-x-0 flex md:flex-col gap-2 items-center transition-colors ${color}`}
     >
       <div className="w-6 sm:w-12 md:w-px h-px md:h-12 bg-current"></div>
 

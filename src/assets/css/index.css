@@ -26,10 +26,10 @@
 @layer utilities {
   /* pages/ */
   .page-base {
-    @apply flex flex-col gap-12;
+    @apply flex flex-col gap-10 sm:gap-12;
   }
   .page-title {
-    @apply text-6xl font-bold transition-colors;
+    @apply text-4xl sm:text-5xl md:text-6xl font-bold transition-colors;
   }
   /* pages/ */
 
