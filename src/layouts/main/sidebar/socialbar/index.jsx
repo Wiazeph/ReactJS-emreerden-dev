@@ -15,9 +15,9 @@ const SocialBar = () => {
 
   return (
     <div
-      className={`flex flex-col gap-2 items-center transition-colors ${color}`}
+      className={`fixed md:static bottom-4 md:bottom-auto left-1/2 md:left-auto -translate-x-1/2 md:-translate-x-0 flex md:flex-col gap-2 items-center transition-colors ${color}`}
     >
-      <div className="h-10 w-px bg-current"></div>
+      <div className="w-6 sm:w-12 md:w-px h-px md:h-12 bg-current"></div>
 
       <a
         href="https://twitter.com/Wiazeph"
@@ -30,7 +30,7 @@ const SocialBar = () => {
         {isHovered ? <FaXTwitter /> : <FaTwitter />}
       </a>
 
-      <div className="h-4 w-px bg-current"></div>
+      <div className="w-3 sm:w-4 md:w-px h-px md:h-4 bg-current"></div>
 
       <a
         href="https://instagram.com/Wiazeph"
@@ -41,7 +41,7 @@ const SocialBar = () => {
         <FaInstagram />
       </a>
 
-      <div className="h-4 w-px bg-current"></div>
+      <div className="w-3 sm:w-4 md:w-px h-px md:h-4 bg-current"></div>
 
       <a
         href="https://linkedin.com/in/Wiazeph"
@@ -52,7 +52,7 @@ const SocialBar = () => {
         <FaLinkedin />
       </a>
 
-      <div className="h-4 w-px bg-current"></div>
+      <div className="w-3 sm:w-4 md:w-px h-px md:h-4 bg-current"></div>
 
       <a
         href="https://github.com/Wiazeph"
@@ -63,7 +63,7 @@ const SocialBar = () => {
         <FaGithub />
       </a>
 
-      <div className="h-4 w-px bg-current"></div>
+      <div className="w-3 sm:w-4 md:w-px h-px md:h-4 bg-current"></div>
 
       <a
         href="https://codepen.io/Wiazeph"
@@ -74,7 +74,7 @@ const SocialBar = () => {
         <FaCodepen />
       </a>
 
-      <div className="h-10 w-px bg-current"></div>
+      <div className="w-6 sm:w-12 md:w-px h-px md:h-12 bg-current"></div>
     </div>
   );
 };

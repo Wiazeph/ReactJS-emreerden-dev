@@ -78,7 +78,7 @@
 
   /* layouts/main/socialbar */
   .socialbar-link {
-    @apply border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50;
+    @apply border border-current w-8 sm:w-9 h-8 sm:h-9 sm:text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50;
   }
   /* layouts/main/socialbar */
 }

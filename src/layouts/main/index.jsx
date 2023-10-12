@@ -3,7 +3,7 @@ import SideBar from "./sidebar";
 
 const MainLayout = () => {
   return (
-    <div className="container mx-auto h-screen flex flex-col sm:flex-row gap-10 sm:gap-20 md:gap-[120px] lg:gap-40 items-center px-6 py-10">
+    <div className="container mx-auto h-screen flex flex-col md:flex-row gap-10 sm:gap-20 md:gap-[120px] lg:gap-40 items-center px-6 pt-8 pb-16 sm:pb-[68px]">
       <aside>
         <SideBar />
       </aside>
