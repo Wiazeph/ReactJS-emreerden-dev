@@ -28,7 +28,7 @@ const WhoAmI = () => {
           What I like to do and my hobbies are:
         </div>
 
-        <ul className="flex flex-col gap-8 tracking-wide">
+        <ul className="flex flex-col gap-4 tracking-wide">
           <li>
             I love watching Movies and TV Series. And I like to talk to people
             about them. If you want to see the movies I watched and my watch

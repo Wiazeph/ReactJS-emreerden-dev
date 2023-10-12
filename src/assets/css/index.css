@@ -10,7 +10,7 @@
 
 @layer components {
   .card-link {
-    @apply flex items-center justify-center py-3 rounded-lg border border-gray-600 bg-[#2a2a2a] shadow-lg text-sm;
+    @apply flex items-center justify-center py-3 rounded-lg border border-neutral-600 bg-neutral-700/40 shadow-lg text-sm;
   }
   .card-home {
     @apply gap-3 px-5;
@@ -44,6 +44,37 @@
     @apply underline transition-colors hover:text-yellow-300;
   }
   /* pages/whoami */
+
+  /* pages/portfolio */
+  .portfolio-filter {
+    @apply px-2 pb-1 text-neutral-400 hover:bg-neutral-800 hover:text-gray-50 transition-colors rounded-lg hover:cursor-pointer;
+  }
+
+  .portfolio-card-link {
+    @apply flex h-10 w-fit cursor-pointer select-none items-center gap-2 rounded-md border border-neutral-600 bg-neutral-800/30 px-3 shadow-red-400 transition duration-300 ease-in-out hover:border-red-400 hover:text-red-400 hover:shadow-[0px_0px_10px];
+  }
+
+  .portfolio-card::before,
+  .portfolio-card::after {
+    @apply absolute left-0 z-10 h-full w-[calc(100%+10px)] bg-[#222222] transition duration-500 content-[''];
+  }
+  .portfolio-card::before {
+    @apply -top-5 -translate-y-full;
+  }
+  .portfolio-card:before {
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+  }
+  .portfolio-card::after {
+    @apply -bottom-5 translate-y-full;
+  }
+  .portfolio-card:after {
+    clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .portfolio-card:hover::before,
+  .portfolio-card:hover::after {
+    @apply translate-y-0;
+  }
+  /* pages/portfolio */
 
   /* layouts/main/socialbar */
   .socialbar-link {

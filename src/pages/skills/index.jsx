@@ -9,11 +9,11 @@ const Skills = () => {
       <div className={`page-title ${color}`}>skills.</div>
 
       <div className="tracking-wide">
-        <div className="text-gray-500 text-sm">{"<span>"}</div>
+        <div className="text-neutral-500 text-sm">{"<span>"}</div>
         <div className="my-2 ml-4">
           Skills I know, I use and currently continue to learn:
         </div>
-        <div className="text-gray-500 text-sm">{"</span>"}</div>
+        <div className="text-neutral-500 text-sm">{"</span>"}</div>
       </div>
 
       <ul

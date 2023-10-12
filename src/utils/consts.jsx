@@ -187,3 +187,18 @@ export const toolsList = [
     title: "Lightshot",
   },
 ];
+
+export const portfolioFilters = [
+  {
+    name: "React Projects",
+  },
+  {
+    name: "Vue Projects",
+  },
+  {
+    name: "Studies",
+  },
+  {
+    name: "Resources",
+  },
+];

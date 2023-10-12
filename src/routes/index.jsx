@@ -3,6 +3,7 @@ import MainLayout from "~/layouts/main";
 import Home from "~/pages/home";
 import WhoAmI from "~/pages/whoami";
 import Skills from "~/pages/skills";
+import Portfolio from "~/pages/portfolio";
 import Tools from "~/pages/tools";
 
 const routes = createBrowserRouter([
@@ -24,7 +25,7 @@ const routes = createBrowserRouter([
       },
       {
         path: "portfolio",
-        element: <div>portfolio</div>,
+        element: <Portfolio />,
       },
       {
         path: "tools",

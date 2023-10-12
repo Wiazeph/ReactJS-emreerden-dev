@@ -3,11 +3,11 @@ import SideBar from "./sidebar";
 
 const MainLayout = () => {
   return (
-    <div className="h-screen flex flex-col sm:flex-row gap-10 sm:gap-20 md:gap-[120px] lg:gap-40 justify-center items-center px-6 pt-10 pb-14">
+    <div className="container mx-auto h-screen flex flex-col sm:flex-row gap-10 sm:gap-20 md:gap-[120px] lg:gap-40 items-center px-6 py-10">
       <aside>
         <SideBar />
       </aside>
-      <main className="w-full max-w-2xl max-h-[85%] overflow-y-auto pr-5">
+      <main className="w-full max-h-full overflow-y-auto pr-5">
         <Outlet />
       </main>
     </div>
