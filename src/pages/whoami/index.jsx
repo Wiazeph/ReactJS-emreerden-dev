@@ -4,8 +4,8 @@ const WhoAmI = () => {
   const color = useColorStore((state) => state.color);
 
   return (
-    <div className="page-base">
-      <div className={`page-title select-none ${color}`}>whoami.</div>
+    <div className="WhoAmIPage page-base !text-left">
+      <div className={`page-title ${color}`}>whoami.</div>
 
       <div className="text-lg">
         First of all, Hello Mate! My name is Emre and I'm 22 years old. I live
@@ -24,12 +24,12 @@ const WhoAmI = () => {
       </div>
 
       <div className="flex flex-col gap-5">
-        <div className={`select-none text-sm transition-colors ${color}`}>
+        <div className={`text-sm transition-colors ${color}`}>
           What I like to do and my hobbies are:
         </div>
 
-        <ul className="flex flex-col gap-4">
-          <li>
+        <div className="flex flex-col gap-4">
+          <div>
             I love watching Movies and TV Series. And I like to talk to people
             about them. If you want to see the movies I watched and my watch
             list:{" "}
@@ -41,8 +41,8 @@ const WhoAmI = () => {
             >
               My Letterboxd Account
             </a>
-          </li>
-          <li>
+          </div>
+          <div>
             I love playing computer games since childhood. It's something I can
             never give up. If you are interested in games, you can check{" "}
             <a
@@ -54,8 +54,8 @@ const WhoAmI = () => {
               My Steam Account
             </a>{" "}
             for the games I play and add me as a friend.
-          </li>
-          <li>
+          </div>
+          <div>
             Also, I have to say that finding new songs and creating playlists on
             Spotify are among my hobbies. You can check{" "}
             <a
@@ -67,8 +67,8 @@ const WhoAmI = () => {
               My Spotify Account
             </a>{" "}
             for playlists.
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

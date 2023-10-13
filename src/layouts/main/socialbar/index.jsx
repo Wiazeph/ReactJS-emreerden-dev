@@ -15,9 +15,9 @@ const SocialBar = () => {
 
   return (
     <div
-      className={`fixed lg:static bottom-[26px] lg:bottom-auto left-1/2 lg:left-auto -translate-x-1/2 lg:-translate-x-0 flex lg:flex-col gap-2 items-center transition-colors ${color}`}
+      className={`SocialBar w-full min-w-fit h-16 fixed z-50 bottom-0 left-1/2 -translate-x-1/2 flex items-center justify-center gap-1 sm:gap-2 transition-colors ${color} bg-baseBgColor`}
     >
-      <div className="w-6 sm:w-12 lg:w-px h-px lg:h-12 bg-current"></div>
+      <div className="w-6 sm:w-10 md:w-14 lg:w-20 h-px bg-current"></div>
 
       <a
         href="https://twitter.com/Wiazeph"
@@ -30,7 +30,7 @@ const SocialBar = () => {
         {isHovered ? <FaXTwitter /> : <FaTwitter />}
       </a>
 
-      <div className="w-3 sm:w-4 lg:w-px h-px lg:h-4 bg-current"></div>
+      <div className="w-3 sm:w-5 md:w-7 lg:w-9 h-px bg-current"></div>
 
       <a
         href="https://instagram.com/Wiazeph"
@@ -41,7 +41,7 @@ const SocialBar = () => {
         <FaInstagram />
       </a>
 
-      <div className="w-3 sm:w-4 lg:w-px h-px lg:h-4 bg-current"></div>
+      <div className="w-3 sm:w-5 md:w-7 lg:w-9 h-px bg-current"></div>
 
       <a
         href="https://linkedin.com/in/Wiazeph"
@@ -52,7 +52,7 @@ const SocialBar = () => {
         <FaLinkedin />
       </a>
 
-      <div className="w-3 sm:w-4 lg:w-px h-px lg:h-4 bg-current"></div>
+      <div className="w-3 sm:w-5 md:w-7 lg:w-9 h-px bg-current"></div>
 
       <a
         href="https://github.com/Wiazeph"
@@ -63,7 +63,7 @@ const SocialBar = () => {
         <FaGithub />
       </a>
 
-      <div className="w-3 sm:w-4 lg:w-px h-px lg:h-4 bg-current"></div>
+      <div className="w-3 sm:w-5 md:w-7 lg:w-9 h-px bg-current"></div>
 
       <a
         href="https://codepen.io/Wiazeph"
@@ -74,7 +74,7 @@ const SocialBar = () => {
         <FaCodepen />
       </a>
 
-      <div className="w-6 sm:w-12 lg:w-px h-px lg:h-12 bg-current"></div>
+      <div className="w-6 sm:w-10 md:w-14 lg:w-20 h-px bg-current"></div>
     </div>
   );
 };

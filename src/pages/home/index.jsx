@@ -6,34 +6,34 @@ const Home = () => {
   const color = useColorStore((state) => state.color);
 
   return (
-    <div className="page-base text-center lg:text-left">
-      <div className="font-semibold flex flex-col gap-4">
-        <span className="text-gray-400 select-none text-lg sm:text-xl md:text-2xl tracking-wider sm:tracking-wide md:tracking-normal">
+    <div className="HomePage page-base">
+      <div className="flex flex-col gap-4">
+        <span className="font-semibold text-gray-400 text-lg sm:text-xl md:text-2xl">
           Hi 👋, I am
         </span>
 
         <div className="font-Caveat text-6xl md:text-7xl">Emre Erden</div>
 
-        <div className="text-xl sm:text-2xl md:text-3xl tracking-wider sm:tracking-wide md:tracking-normal">
-          <span className="text-gray-400 select-none">{"<"}</span>
+        <div className="font-semibold text-xl sm:text-2xl md:text-3xl">
+          <span className="text-gray-400">{"<"}</span>
           <span className={`sm:ml-0.5 transition-colors ${color}`}>
             Front-End Developer
           </span>
-          <span className="text-gray-400 select-none">{" />"}</span>
+          <span className="text-gray-400">{" />"}</span>
         </div>
       </div>
 
-      <div className="max-w-[650px] lg:max-w-none mx-auto text-lg">
+      <div className="text-lg">
         I'm working to be an experienced developer in the Front-End world. In
         this profession, I'm open to learning and improving myself. I enjoy
         learning new things and constantly improving myself.
       </div>
 
-      <div className="flex flex-wrap-reverse justify-center lg:justify-start gap-4">
-        <div className="card-link card-home">
+      <div className="flex flex-wrap-reverse justify-center gap-4">
+        <div className="card-link gap-3 px-4">
           <a
             href="mailto:emreerden@pm.me"
-            className="home-link flex items-center justify-center gap-2"
+            className="flex items-center gap-2 transition-colors hover:text-pink-400"
           >
             <span className="text-xl">
               <IoIosMail />
@@ -47,7 +47,7 @@ const Home = () => {
             href="https://t.me/Wiazeph"
             target="_blank"
             rel="noopener noreferrer"
-            className="home-link flex items-center justify-center gap-2 select-none"
+            className="flex items-center gap-2 transition-colors hover:text-pink-400"
           >
             <span className="text-lg">
               <FaTelegramPlane />
@@ -56,12 +56,12 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="card-link card-home select-none">
+        <div className="card-link gap-3 px-4">
           <a
             href="https://flowcv.com/resume/l3ncgjown0"
             target="_blank"
             rel="noopener noreferrer"
-            className="home-link"
+            className="transition-colors hover:text-pink-400"
           >
             View CV
           </a>
@@ -72,7 +72,7 @@ const Home = () => {
             href="Emre_Erden_CV.pdf"
             target="_blank"
             download="Emre_Erden_CV.pdf"
-            className="home-link"
+            className="transition-colors hover:text-pink-400"
           >
             Download CV
           </a>

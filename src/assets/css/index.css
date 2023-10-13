@@ -4,59 +4,44 @@
 
 @layer base {
   body {
-    @apply bg-[#1a1a1a] text-gray-50 font-Heebo tracking-wide;
+    @apply bg-baseBgColor text-gray-50 font-Heebo tracking-wide;
   }
 }
 
 @layer components {
   .card-link {
-    @apply flex items-center justify-center h-12 rounded-lg border border-neutral-600 bg-neutral-700/40 shadow-lg text-sm w-fit;
-  }
-  .card-home {
-    @apply gap-3 px-3 sm:px-4 md:px-5;
-  }
-  .card-skills {
-    @apply gap-3 w-[calc(50%-10px)] sm:w-[calc(33%-12px)] md:w-[calc(25%-15px)] lg:w-[calc(33%-12px)];
-  }
-  .card-tools {
-    @apply w-[calc(50%-10px)] sm:w-[calc(33%-12px)] md:w-[calc(25%-15px)] lg:w-[calc(33%-12px)];
+    @apply h-12 flex items-center justify-center rounded-lg border border-neutral-600 bg-neutral-700/40 shadow-lg text-sm;
   }
 }
 
 @layer utilities {
+  /* layouts/ */
+  .socialbar-link {
+    @apply border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50;
+  }
+  /* layouts/ */
+
   /* pages/ */
   .page-base {
-    @apply flex flex-col gap-10 sm:gap-12;
+    @apply flex flex-col gap-10 text-center items-center;
   }
   .page-title {
-    @apply text-center lg:text-left text-4xl sm:text-5xl md:text-6xl font-black transition-colors;
+    @apply text-center text-4xl sm:text-5xl md:text-6xl font-black transition-colors;
   }
-  /* pages/ */
-
-  /* pages/home */
-  .home-link {
-    @apply transition-colors hover:text-pink-400;
-  }
-  /* pages/home */
-
-  /* pages/whoami */
   .whoami-link {
     @apply underline transition-colors hover:text-yellow-300;
   }
-  /* pages/whoami */
 
   /* pages/portfolio */
   .portfolio-filter {
     @apply px-2 py-1 text-neutral-400 hover:bg-neutral-800 hover:text-gray-50 transition-colors rounded-lg hover:cursor-pointer;
   }
-
   .portfolio-card-link {
-    @apply flex h-10 w-fit cursor-pointer select-none items-center gap-2 rounded-md border border-neutral-600 bg-neutral-800/30 px-3 shadow-red-400 transition duration-300 ease-in-out hover:border-red-400 hover:text-red-400 hover:shadow-[0px_0px_10px] pointer-events-none;
+    @apply flex items-center justify-center gap-2 h-10 cursor-pointer rounded-md border border-neutral-600 bg-neutral-800/30 px-2 shadow-red-400 transition duration-300 ease-in-out hover:border-red-400 hover:text-red-400 hover:shadow-[0px_0px_10px];
   }
-
   .portfolio-card::before,
   .portfolio-card::after {
-    @apply absolute left-0 z-10 h-full w-[calc(100%+10px)] bg-[#222222] transition duration-500 content-[''];
+    @apply absolute left-0 z-10 h-full w-full bg-[#222222] transition duration-500 content-[''];
   }
   .portfolio-card::before {
     @apply -top-5 -translate-y-full;
@@ -74,16 +59,8 @@
   .portfolio-card:hover::after {
     @apply translate-y-0;
   }
-  .portfolio-card:hover .portfolio-card-link {
-    @apply pointer-events-auto;
-  }
   /* pages/portfolio */
-
-  /* layouts/main/socialbar */
-  .socialbar-link {
-    @apply border border-current w-8 sm:w-9 h-8 sm:h-9 sm:text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50;
-  }
-  /* layouts/main/socialbar */
+  /* pages/ */
 
   .no-scrollbar {
     -ms-overflow-style: none;

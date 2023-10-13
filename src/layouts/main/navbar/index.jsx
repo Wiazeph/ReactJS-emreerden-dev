@@ -27,26 +27,23 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="md:text-lg flex lg:flex-col gap-3 sm:gap-6 md:gap-[36px] lg:gap-0 pr-6 sm:pr-12 md:pr-[68px] lg:pr-0">
+    <nav className="NavBar w-full h-24 fixed z-50 top-0 left-1/2 -translate-x-1/2 flex items-center justify-center gap-3 sm:gap-4 md:gap-5 lg:gap-6 bg-baseBgColor">
       {navLinks.map((nlink, index) => (
         <NavLink
           key={index}
           to={nlink.path}
-          className="select-none"
           onClick={() => setCurrentPathColor(nlink.color)}
           onMouseOver={() => handleNavLinkOver(nlink.color)}
           onMouseOut={handleNavLinkOut}
         >
           {({ isActive }) => (
             <div
-              className={classNames("flex items-center transition-all py-3", {
+              className={classNames("transition-all", {
                 [nlink.color]: isActive,
                 [nlink.textHover]: !isActive,
               })}
             >
-              <div className="lg:mr-5 hidden lg:block">{index}.</div>
-              <div className="lg:mr-1 hidden lg:block">#</div>
-              <div>{nlink.title}</div>
+              {nlink.title}
             </div>
           )}
         </NavLink>

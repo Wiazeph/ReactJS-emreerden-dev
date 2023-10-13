@@ -51,20 +51,22 @@ const Portfolio = () => {
   console.log(repos);
 
   return (
-    <div className="page-base select-none">
+    <div className="PortfolioPage page-base">
       <div className={`page-title ${color}`}>portfolio.</div>
 
-      <div className="text-center lg:text-left">
+      <div>
         <div className="text-neutral-500 text-sm">{"<span>"}</div>
-        <div className="my-2 ml-4">
+
+        <div className="my-2 text-lg">
           All the works I have done about the technologies I know and am still
           learning
         </div>
+
         <div className="text-neutral-500 text-sm">{"</span>"}</div>
       </div>
 
-      <div>
-        <div className="max-w-[401px] mx-auto lg:mx-0">
+      <div className="w-full">
+        <div className="max-w-max mx-auto">
           <div className="overflow-x-auto no-scrollbar">
             <ul className="mb-4 pb-1.5 w-max flex border-b border-neutral-600">
               <li>
@@ -91,11 +93,11 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <ul className="flex flex-wrap gap-4 justify-center lg:justify-start">
+        <ul className="flex flex-wrap justify-center gap-4">
           {repos.map((repo, index) => (
             <li
               key={index}
-              className="portfolio-card group relative h-56 w-[308px] lg:w-[calc(50%-8px)] border border-neutral-600 bg-cover bg-center bg-no-repeat overflow-hidden rounded-lg"
+              className="portfolio-card group relative h-64 w-full md:w-[calc(50%-8px)] max-w-[350px] min-w-[100px] md:max-w-none border border-neutral-600 bg-cover bg-center bg-no-repeat overflow-hidden rounded-lg"
               style={{
                 backgroundImage: `url(${repo.img})`,
               }}
@@ -116,12 +118,10 @@ const Portfolio = () => {
 
                     <div className="border border-gray-50"></div>
 
-                    <div className="flex select-none items-center justify-center gap-2">
+                    <div className="flex items-center justify-center gap-2">
                       <FiStar />
-
-                      <div className="mb-px">Star</div>
-
-                      <div className="rounded-full bg-neutral-700/70 px-[7px] pt-[2px] pb-0.5 leading-4">
+                      <div className="mt-px">Star</div>
+                      <div className="rounded-full bg-neutral-700/70 px-[7px] pt-[3px] pb-0.5 leading-4">
                         {repo.stars}
                       </div>
                     </div>
@@ -134,7 +134,7 @@ const Portfolio = () => {
                     className="portfolio-card-link"
                   >
                     <IoLogoVercel />
-                    <div className="w-max">Live Action</div>
+                    <div className="w-max mt-px">Live Action</div>
                   </a>
                 </div>
               </div>

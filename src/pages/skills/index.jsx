@@ -5,19 +5,21 @@ const Skills = () => {
   const color = useColorStore((state) => state.color);
 
   return (
-    <div className="page-base select-none">
+    <div className="SkillsPage page-base">
       <div className={`page-title ${color}`}>skills.</div>
 
-      <div className="text-center lg:text-left">
+      <div>
         <div className="text-neutral-500 text-sm">{"<span>"}</div>
-        <div className="my-2 ml-4">
+
+        <div className="my-2 text-lg">
           Skills I know, I use and currently continue to learn
         </div>
+
         <div className="text-neutral-500 text-sm">{"</span>"}</div>
       </div>
 
       <ul
-        className={`flex flex-wrap items-center gap-5 transition-colors ${color}`}
+        className={`flex flex-wrap justify-center gap-4 transition-colors ${color}`}
       >
         {skillsList.map((skill, index) => (
           <a
@@ -25,7 +27,7 @@ const Skills = () => {
             href={skill.path}
             target="_blank"
             rel="noopener noreferrer"
-            className={`card-link card-skills hover:border-green-400 [&:not(:hover)]:text-gray-50 transition-colors ${color}`}
+            className={`card-link gap-3 w-full max-w-[250px] sm:w-[calc(33%-9px)] hover:border-green-400 [&:not(:hover)]:text-gray-50 transition-colors ${color} animate-scaler ${skill.animation}`}
           >
             <span className="text-xl">{skill.icon}</span>
             <span>{skill.title}</span>
