@@ -10,6 +10,7 @@ export default {
         },
       },
       fontFamily: {
+        Heebo: ["Heebo", "sans-serif"],
         Caveat: ["Caveat", "cursive"],
       },
     },

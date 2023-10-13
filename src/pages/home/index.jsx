@@ -7,23 +7,23 @@ const Home = () => {
 
   return (
     <div className="page-base text-center lg:text-left">
-      <div className="font-semibold flex flex-col gap-4 tracking-wider">
-        <span className="text-gray-400 select-none text-lg sm:text-xl md:text-2xl">
+      <div className="font-semibold flex flex-col gap-4">
+        <span className="text-gray-400 select-none text-lg sm:text-xl md:text-2xl tracking-wider sm:tracking-wide md:tracking-normal">
           Hi 👋, I am
         </span>
 
         <div className="font-Caveat text-6xl md:text-7xl">Emre Erden</div>
 
-        <div className="text-xl sm:text-2xl md:text-3xl">
+        <div className="text-xl sm:text-2xl md:text-3xl tracking-wider sm:tracking-wide md:tracking-normal">
           <span className="text-gray-400 select-none">{"<"}</span>
-          <span className={`transition-colors ${color}`}>
+          <span className={`sm:ml-0.5 transition-colors ${color}`}>
             Front-End Developer
           </span>
           <span className="text-gray-400 select-none">{" />"}</span>
         </div>
       </div>
 
-      <div className="tracking-wider max-w-[650px] lg:max-w-none mx-auto">
+      <div className="max-w-[650px] lg:max-w-none mx-auto text-lg">
         I'm working to be an experienced developer in the Front-End world. In
         this profession, I'm open to learning and improving myself. I enjoy
         learning new things and constantly improving myself.
@@ -38,7 +38,7 @@ const Home = () => {
             <span className="text-xl">
               <IoIosMail />
             </span>
-            <span className="-mt-0.5">emreerden@pm.me</span>
+            <span>emreerden@pm.me</span>
           </a>
 
           <div className="border border-gray-50"></div>
@@ -52,7 +52,7 @@ const Home = () => {
             <span className="text-lg">
               <FaTelegramPlane />
             </span>
-            <span className="-mt-0.5">Telegram</span>
+            <span>Telegram</span>
           </a>
         </div>
 

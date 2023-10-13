@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-[#1a1a1a] text-gray-50;
+    @apply bg-[#1a1a1a] text-gray-50 font-Heebo tracking-wide;
   }
 }
 
@@ -29,7 +29,7 @@
     @apply flex flex-col gap-10 sm:gap-12;
   }
   .page-title {
-    @apply text-center lg:text-left text-4xl sm:text-5xl md:text-6xl font-bold transition-colors;
+    @apply text-center lg:text-left text-4xl sm:text-5xl md:text-6xl font-black transition-colors;
   }
   /* pages/ */
 
@@ -47,7 +47,7 @@
 
   /* pages/portfolio */
   .portfolio-filter {
-    @apply px-2 pb-1 text-neutral-400 hover:bg-neutral-800 hover:text-gray-50 transition-colors rounded-lg hover:cursor-pointer;
+    @apply px-2 py-1 text-neutral-400 hover:bg-neutral-800 hover:text-gray-50 transition-colors rounded-lg hover:cursor-pointer;
   }
 
   .portfolio-card-link {

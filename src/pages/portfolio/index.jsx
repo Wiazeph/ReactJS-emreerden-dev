@@ -54,7 +54,7 @@ const Portfolio = () => {
     <div className="page-base select-none">
       <div className={`page-title ${color}`}>portfolio.</div>
 
-      <div className="tracking-wide text-center lg:text-left">
+      <div className="text-center lg:text-left">
         <div className="text-neutral-500 text-sm">{"<span>"}</div>
         <div className="my-2 ml-4">
           All the works I have done about the technologies I know and am still

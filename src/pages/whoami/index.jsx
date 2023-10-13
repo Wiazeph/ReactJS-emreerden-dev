@@ -7,7 +7,7 @@ const WhoAmI = () => {
     <div className="page-base">
       <div className={`page-title select-none ${color}`}>whoami.</div>
 
-      <div className="tracking-wide">
+      <div className="text-lg">
         First of all, Hello Mate! My name is Emre and I'm 22 years old. I live
         in{" "}
         <a
@@ -28,7 +28,7 @@ const WhoAmI = () => {
           What I like to do and my hobbies are:
         </div>
 
-        <ul className="flex flex-col gap-4 tracking-wide">
+        <ul className="flex flex-col gap-4">
           <li>
             I love watching Movies and TV Series. And I like to talk to people
             about them. If you want to see the movies I watched and my watch
