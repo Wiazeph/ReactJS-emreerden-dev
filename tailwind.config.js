@@ -13,6 +13,9 @@ export default {
         Heebo: ["Heebo", "sans-serif"],
         Caveat: ["Caveat", "cursive"],
       },
+      colors: {
+        baseBgColor: "#1a1a1a",
+      },
     },
   },
   plugins: [],
