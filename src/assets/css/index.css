@@ -10,16 +10,16 @@
 
 @layer components {
   .card-link {
-    @apply flex items-center justify-center py-3 rounded-lg border border-neutral-600 bg-neutral-700/40 shadow-lg text-sm;
+    @apply flex items-center justify-center h-12 rounded-lg border border-neutral-600 bg-neutral-700/40 shadow-lg text-sm w-fit;
   }
   .card-home {
-    @apply gap-3 px-5;
+    @apply gap-3 px-3 sm:px-4 md:px-5;
   }
   .card-skills {
-    @apply gap-3 w-[calc(33%-12px)];
+    @apply gap-3 w-[calc(50%-10px)] sm:w-[calc(33%-12px)] md:w-[calc(25%-15px)] lg:w-[calc(33%-12px)];
   }
   .card-tools {
-    @apply w-[calc(33%-12px)];
+    @apply w-[calc(50%-10px)] sm:w-[calc(33%-12px)] md:w-[calc(25%-15px)] lg:w-[calc(33%-12px)];
   }
 }
 
@@ -81,4 +81,12 @@
     @apply border border-current w-8 sm:w-9 h-8 sm:h-9 sm:text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50;
   }
   /* layouts/main/socialbar */
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }

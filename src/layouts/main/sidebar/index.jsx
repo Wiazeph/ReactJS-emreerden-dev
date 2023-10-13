@@ -3,7 +3,7 @@ import SocialBar from "./socialbar";
 
 const SideBar = () => {
   return (
-    <div className="md:flex md:gap-24 lg:gap-48 md:items-center">
+    <div className="lg:flex lg:gap-24 xl:gap-48 lg:items-center">
       <SocialBar />
 
       <NavBar />

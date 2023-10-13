@@ -20,16 +20,16 @@ const Portfolio = () => {
       </div>
 
       <div>
-        <ul className="mb-4 flex w-fit pb-1.5 border-b border-neutral-600">
-          <>
+        <div className="overflow-x-auto no-scrollbar">
+          <ul className="mb-4 flex pb-1.5 border-b border-neutral-600 w-max">
             <li className="portfolio-filter">All</li>
             {portfolioFilters.map((filter, index) => (
               <li key={index} className="portfolio-filter">
                 {filter.name}
               </li>
             ))}
-          </>
-        </ul>
+          </ul>
+        </div>
 
         <ul className="flex flex-wrap gap-4">
           <li

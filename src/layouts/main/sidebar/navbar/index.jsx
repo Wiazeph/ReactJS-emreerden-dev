@@ -27,7 +27,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="md:text-lg flex md:flex-col gap-3 sm:gap-6 md:gap-0 pr-6 sm:pr-12 md:pr-0">
+    <nav className="md:text-lg flex lg:flex-col gap-3 sm:gap-6 md:gap-[36px] lg:gap-0 pr-6 sm:pr-12 md:pr-[72px] lg:pr-0">
       {navLinks.map((nlink, index) => (
         <NavLink
           key={index}
@@ -44,8 +44,8 @@ const NavBar = () => {
                 [nlink.textHover]: !isActive,
               })}
             >
-              <div className="md:mr-5 hidden md:block">{index}.</div>
-              <div className="md:mr-1 hidden md:block">#</div>
+              <div className="lg:mr-5 hidden lg:block">{index}.</div>
+              <div className="lg:mr-1 hidden lg:block">#</div>
               <div>{nlink.title}</div>
             </div>
           )}

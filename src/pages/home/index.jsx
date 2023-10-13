@@ -6,13 +6,15 @@ const Home = () => {
   const color = useColorStore((state) => state.color);
 
   return (
-    <div className="page-base">
-      <div className="font-semibold">
-        <span className="text-gray-400 select-none text-2xl">Hi 👋, I am</span>
+    <div className="page-base text-center lg:text-left">
+      <div className="font-semibold flex flex-col gap-4 tracking-wider">
+        <span className="text-gray-400 select-none text-lg sm:text-xl md:text-2xl">
+          Hi 👋, I am
+        </span>
 
-        <div className="mt-1 text-7xl">Emre Erden</div>
+        <div className="font-Caveat text-6xl md:text-7xl">Emre Erden</div>
 
-        <div className="mt-4 text-3xl tracking-wider">
+        <div className="text-xl sm:text-2xl md:text-3xl">
           <span className="text-gray-400 select-none">{"<"}</span>
           <span className={`transition-colors ${color}`}>
             Front-End Developer
@@ -21,13 +23,13 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="tracking-wider">
+      <div className="tracking-wider max-w-[650px] lg:max-w-none mx-auto">
         I'm working to be an experienced developer in the Front-End world. In
         this profession, I'm open to learning and improving myself. I enjoy
         learning new things and constantly improving myself.
       </div>
 
-      <div className="flex gap-4">
+      <div className="flex flex-wrap-reverse justify-center lg:justify-start gap-4">
         <div className="card-link card-home">
           <a
             href="mailto:emreerden@pm.me"
