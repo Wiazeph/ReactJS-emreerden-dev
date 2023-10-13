@@ -27,7 +27,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="md:text-lg flex lg:flex-col gap-3 sm:gap-6 md:gap-[36px] lg:gap-0 pr-6 sm:pr-12 md:pr-[72px] lg:pr-0">
+    <nav className="md:text-lg flex lg:flex-col gap-3 sm:gap-6 md:gap-[36px] lg:gap-0 pr-6 sm:pr-12 md:pr-[68px] lg:pr-0">
       {navLinks.map((nlink, index) => (
         <NavLink
           key={index}

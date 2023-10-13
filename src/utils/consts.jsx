@@ -191,14 +191,18 @@ export const toolsList = [
 export const portfolioFilters = [
   {
     name: "React Projects",
+    filterName: "react",
   },
   {
     name: "Vue Projects",
+    filterName: "vue",
   },
   {
     name: "Studies",
+    filterName: "study",
   },
   {
     name: "Resources",
+    filterName: "resource",
   },
 ];
