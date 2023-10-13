@@ -12,7 +12,7 @@ const Home = () => {
           Hi 👋, I am
         </span>
 
-        <div className="font-Caveat text-6xl md:text-7xl">Emre Erden</div>
+        <div className="font-Caveat text-6xl md:text-7xl -mt-1">Emre Erden</div>
 
         <div className="font-semibold text-xl sm:text-2xl md:text-3xl">
           <span className="text-gray-400">{"<"}</span>
