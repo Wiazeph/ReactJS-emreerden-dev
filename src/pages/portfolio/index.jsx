@@ -1,19 +1,21 @@
-import { useState, useEffect } from "react";
 import axios from "axios";
 import { useColorStore } from "~/stores/color";
+import { useReposStore } from "~/stores/repos";
 import { portfolioFilters } from "~/utils/consts";
+import { useState, useEffect } from "react";
 import { FiGithub, FiStar } from "react-icons/fi";
 import { IoLogoVercel } from "react-icons/io5";
 
 const Portfolio = () => {
+  const color = useColorStore((state) => state.color);
+  const repos = useReposStore((state) => state.repos);
+  const setRepos = useReposStore((state) => state.setRepos);
+
   const [selectedFilter, setSelectedFilter] = useState([
     "project",
     "resource",
     "study",
   ]);
-  const color = useColorStore((state) => state.color);
-  const repos = useColorStore((state) => state.repos);
-  const setRepos = useColorStore((state) => state.setRepos);
 
   useEffect(() => {
     const getRepoData = async () => {
