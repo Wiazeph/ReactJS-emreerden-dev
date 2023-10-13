@@ -190,11 +190,11 @@ export const toolsList = [
 
 export const portfolioFilters = [
   {
-    name: "React Projects",
+    name: "React",
     filterName: "react",
   },
   {
-    name: "Vue Projects",
+    name: "Vue",
     filterName: "vue",
   },
   {
