@@ -27,9 +27,9 @@ const Skills = () => {
             href={skill.path}
             target="_blank"
             rel="noopener noreferrer"
-            className={`card-link gap-3 w-full max-w-[250px] sm:w-[calc(33%-9px)] hover:border-green-400 [&:not(:hover)]:text-gray-50 transition-colors ${color} animate-scaler ${skill.animation}`}
+            className={`card-link gap-3 w-full max-w-[250px] hover:border-green-400 [&:not(:hover)]:text-gray-50 transition-colors ${color}`}
           >
-            <span className="text-xl">{skill.icon}</span>
+            <span className="text-2xl">{skill.icon}</span>
             <span>{skill.title}</span>
           </a>
         ))}

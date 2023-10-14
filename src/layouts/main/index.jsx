@@ -1,15 +1,13 @@
 import { Outlet } from "react-router-dom";
-import SocialBar from "./socialbar";
 import NavBar from "./navbar";
 
 const MainLayout = () => {
   return (
-    <div className="container mx-auto h-screen">
+    <div className="container mx-auto">
       <NavBar />
-      <main className="container pt-28 sm:pt-32 md:pt-36 px-6 mb-28">
+      <main className="pt-28 sm:pt-32 px-6 pb-14">
         <Outlet />
       </main>
-      <SocialBar />
     </div>
   );
 };

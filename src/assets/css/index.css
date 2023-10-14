@@ -4,20 +4,20 @@
 
 @layer base {
   body {
-    @apply h-screen bg-baseBgColor text-gray-50 font-Heebo tracking-wide;
+    @apply bg-baseBgColor text-gray-50 font-Heebo tracking-wide;
   }
 }
 
 @layer components {
   .card-link {
-    @apply h-12 flex items-center justify-center rounded-lg border border-neutral-600 bg-neutral-700/40 shadow-lg text-sm;
+    @apply h-14 flex items-center justify-center rounded-lg border border-neutral-600 bg-neutral-700/40 shadow-lg;
   }
 }
 
 @layer utilities {
   /* layouts/ */
   .socialbar-link {
-    @apply border border-current w-9 h-9 text-lg rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50;
+    @apply border border-current w-10 h-10 text-xl rounded-full flex items-center justify-center transition-colors [&:not(:hover)]:text-gray-50;
   }
   /* layouts/ */
 
