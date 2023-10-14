@@ -13,8 +13,8 @@ const Portfolio = () => {
 
   const [selectedFilter, setSelectedFilter] = useState([
     "project",
-    "resource",
     "study",
+    "resource",
   ]);
 
   useEffect(() => {
@@ -50,6 +50,14 @@ const Portfolio = () => {
 
   console.log(repos);
 
+  const handleFilterClick = (filter) => {
+    if (filter === "all") {
+      setSelectedFilter(["project", "study", "resource"]);
+    } else {
+      setSelectedFilter([filter]);
+    }
+  };
+
   return (
     <div className="PortfolioPage page-base">
       <div className={`page-title ${color}`}>portfolio.</div>
@@ -71,10 +79,8 @@ const Portfolio = () => {
             <ul className="mb-4 pb-1.5 w-max flex border-b border-neutral-600">
               <li>
                 <button
-                  className="portfolio-filter"
-                  onClick={() =>
-                    setSelectedFilter(["project", "resource", "study"])
-                  }
+                  className="px-2 py-1 text-neutral-400 hover:bg-neutral-800 hover:text-gray-50 transition-colors rounded-lg hover:cursor-pointer"
+                  onClick={() => handleFilterClick("all")}
                 >
                   All
                 </button>
@@ -82,8 +88,8 @@ const Portfolio = () => {
               {portfolioFilters.map((filter, index) => (
                 <li key={index}>
                   <button
-                    className="portfolio-filter"
-                    onClick={() => setSelectedFilter([filter.filterName])}
+                    className="px-2 py-1 text-neutral-400 hover:bg-neutral-800 hover:text-gray-50 transition-colors rounded-lg hover:cursor-pointer"
+                    onClick={() => handleFilterClick(filter.filterName)}
                   >
                     {filter.name}
                   </button>
