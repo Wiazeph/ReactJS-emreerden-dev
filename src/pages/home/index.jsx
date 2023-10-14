@@ -35,7 +35,7 @@ const Home = () => {
           <div className="card-link gap-3 px-4">
             <a
               href="mailto:emreerden@pm.me"
-              className="flex items-center gap-2 transition-colors hover:text-pink-400"
+              className={`flex items-center gap-2 transition-colors hover:${color}`}
             >
               <span className="text-xl">
                 <IoIosMail />
@@ -49,7 +49,7 @@ const Home = () => {
               href="https://t.me/Wiazeph"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 transition-colors hover:text-pink-400"
+              className={`flex items-center gap-2 transition-colors hover:${color}`}
             >
               <span className="text-lg">
                 <FaTelegramPlane />
@@ -63,7 +63,7 @@ const Home = () => {
               href="https://flowcv.com/resume/l3ncgjown0"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition-colors hover:text-pink-400"
+              className={`transition-colors hover:${color}`}
             >
               View CV
             </a>
@@ -74,7 +74,7 @@ const Home = () => {
               href="Emre_Erden_CV.pdf"
               target="_blank"
               download="Emre_Erden_CV.pdf"
-              className="transition-colors hover:text-pink-400"
+              className={`transition-colors hover:${color}`}
             >
               Download CV
             </a>
