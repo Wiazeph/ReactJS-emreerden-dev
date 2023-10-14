@@ -27,7 +27,7 @@ const NavBar = () => {
   }, [setColor]);
 
   return (
-    <nav className="NavBar w-full h-24 fixed z-50 top-0 left-1/2 -translate-x-1/2 flex items-center justify-center gap-3 sm:gap-4 md:gap-5 lg:gap-6 bg-baseBgColor">
+    <nav className="NavBar h-24 flex items-center justify-center gap-3 sm:gap-4 md:gap-5 lg:gap-6">
       {navLinks.map((nlink, index) => (
         <NavLink
           key={index}
