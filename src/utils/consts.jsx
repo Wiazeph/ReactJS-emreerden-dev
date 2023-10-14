@@ -95,6 +95,10 @@ export const portfolioFilters = [
     filterName: "vue",
   },
   {
+    name: "Projects",
+    filterName: "project",
+  },
+  {
     name: "Studies",
     filterName: "study",
   },
