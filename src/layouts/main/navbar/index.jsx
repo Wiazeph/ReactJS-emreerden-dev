@@ -27,7 +27,7 @@ const NavBar = () => {
   }, [setColor]);
 
   return (
-    <nav className="NavBar h-24 flex items-center justify-center gap-3 sm:gap-4 md:gap-5 lg:gap-6">
+    <nav className="NavBar h-24 flex items-center justify-center">
       {navLinks.map((nlink, index) => (
         <NavLink
           key={index}
@@ -38,7 +38,7 @@ const NavBar = () => {
         >
           {({ isActive }) => (
             <div
-              className={classNames("transition-all", {
+              className={classNames("transition-all px-1.5 sm:px-2 md:px-2.5 lg:px-3", {
                 [nlink.color]: isActive,
                 [nlink.textHover]: !isActive,
               })}
