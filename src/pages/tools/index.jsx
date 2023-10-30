@@ -1,5 +1,5 @@
 import { useColorStore } from "~/stores/color";
-import { toolsList } from "~/utils/consts";
+import { toolsList } from "~/utils/consts/toolslist";
 
 const Tools = () => {
   const color = useColorStore((state) => state.color);

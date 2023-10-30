@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useColorStore } from "~/stores/color";
 import { useReposStore } from "~/stores/repos";
-import { portfolioFilters } from "~/utils/consts";
+import { portfolioFilters } from "~/utils/consts/portfoliofilters";
 import { useState, useEffect } from "react";
 import { FiGithub, FiStar } from "react-icons/fi";
 import { IoLogoVercel } from "react-icons/io5";

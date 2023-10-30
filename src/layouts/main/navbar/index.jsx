@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { NavLink } from "react-router-dom";
-import navLinks from "~/utils/consts";
+import { navLinks } from "~/utils/consts/navlinks";
 import { useColorStore } from "~/stores/color";
 import { useState, useEffect } from "react";
 
@@ -38,10 +38,13 @@ const NavBar = () => {
         >
           {({ isActive }) => (
             <div
-              className={classNames("transition-all px-1.5 sm:px-2 md:px-2.5 lg:px-3", {
-                [nlink.color]: isActive,
-                [nlink.textHover]: !isActive,
-              })}
+              className={classNames(
+                "transition-all px-1.5 sm:px-2 md:px-2.5 lg:px-3",
+                {
+                  [nlink.color]: isActive,
+                  [nlink.textHover]: !isActive,
+                }
+              )}
             >
               {nlink.title}
             </div>

@@ -1,5 +1,5 @@
 import { useColorStore } from "~/stores/color";
-import { skillsList } from "~/utils/consts";
+import { skillsList } from "~/utils/consts/skillslist";
 
 const Skills = () => {
   const color = useColorStore((state) => state.color);
