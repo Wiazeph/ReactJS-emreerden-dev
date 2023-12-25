@@ -1,5 +1,9 @@
 export const portfolioFilters = [
   {
+    name: "Next.js",
+    filterName: "nextjs",
+  },
+  {
     name: "React",
     filterName: "react",
   },
